@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1507299148 source:c:\c+\homewwrk2\homewrk2\main.c
+	<stdio.h>
+	<stdlib.h>
+
