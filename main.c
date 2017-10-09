@@ -6,13 +6,13 @@ int main()
     int trees,i, j,m ,n,z;
     printf("Input number : ");
     scanf ("%d",&trees);
-
-    if (trees<0){
-            printf("Bad number -");
+    // Check for negative numbers and Christmas tree more than 2 characters
+    if ((trees<0) || (trees<3)){
+            printf("Bad number - or numbers < 2");
             exit ;
             }
     else {
-   // ступеньки вниз  по возрастающей
+   // Triangle in increasing
     for(i = 0; i <= trees; i++){
         for(j = 0; j <= trees; j++){
             if(i > j )
@@ -22,7 +22,7 @@ int main()
         printf("\n");
     }
     printf("\n");
-    //ступеньки вниз  по убывающей
+    //Triangle in decreasing
          for(n = 0; n <= trees; n++){
          for(m = 0; m <= trees; m++){
             if(n < m )
@@ -30,7 +30,7 @@ int main()
         }
         printf("\n");
         }
-        //elka
+        // crism tree
         for (i = trees; i <= trees; i++) {
         for (j = 0; j <= i; j++) {
             if (j == i) {
@@ -51,11 +51,18 @@ int main()
             }
            printf("\n");
         }
-       //  printf("*");
-         //
-
-         //
+        // penek for trees
+        if (i=-1);
+         while (i<=trees)
+        //for (i=-1;i<=trees;i++)
+            {
+            if (i!=trees)
+            printf(" ");
+            if (i==trees)
+            printf("*");
+            i++;
+            }
         }
-   }
+        }
    return 0;
 }
