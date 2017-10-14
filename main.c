@@ -10,15 +10,14 @@ int main()
     if ((trees<0) || (trees<3)){
             printf("Bad number - or numbers < 2");
             exit ;
-            }
-    else {
+    } else {
    // Triangle in increasing
     for(i = 0; i <= trees; i++){
         for(j = 0; j <= trees; j++){
             if(i > j )
             printf("*");
-
         }
+
         printf("\n");
     }
     printf("\n");
@@ -32,27 +31,23 @@ int main()
     }
 
     //cristmas tree created
-    int spaces = 0;
-    int stars = 0;
-    int k =0, j=0;
-    for (i = 0 , spaces = trees, stars = -1; i <= trees; i++, stars += 2, spaces-- ){
-        for (j =0; j < spaces; j++){
+    int height=0;
+    int spaces, stars,k;
+    for ( i=0 , spaces = trees, stars = -1; i <= trees; i++, stars +=2, spaces--) {
+        for (j = 0; j < spaces; j++){
             printf(" ");
         }
 
-        for (k = 0; k < stars; i++ ){
+        for (k = 1;k <=stars; k++){
             printf("*");
         }
-
         printf("\n");
     }
 
-    // create penek
-    for (i = 0; i < trees - 1; i++){
+    for (i = 0;i < trees - 1; i++){
         printf(" ");
     }
-
     printf("*\n");
+    return 0;
     }
-   return 0;
 }
