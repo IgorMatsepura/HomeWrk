@@ -17,7 +17,6 @@ int main()
             if(i > j )
             printf("*");
         }
-
         printf("\n");
     }
     printf("\n");
@@ -29,7 +28,6 @@ int main()
         }
         printf("\n");
     }
-
     //cristmas tree created
     int height=0;
     int spaces, stars,k;
